@@ -88,11 +88,18 @@
         text-align: center;
         padding: 30px;
         transition: all 0.3s ease;
+        overflow: hidden;
       }
       .image-placeholder-box:hover {
         border-color: var(--terracotta);
         color: var(--terracotta);
         background-color: #fafbf7;
+      }
+      .image-placeholder-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 15px;
       }
       .placeholder-icon {
         font-size: 4rem;
@@ -158,7 +165,7 @@
         background: #fff;
         border-radius: 15px;
         overflow: hidden;
-        border-left: 8px solid #8b0000; /* Dark Red */
+        border-left: 8px solid #8b0000;
         margin-bottom: 30px;
         transition: 0.3s;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -314,7 +321,7 @@
                     class="fw-bold mb-3"
                     style="
                       color: var(--primary-green);
-                      font-family: &quot;Playfair Display&quot;, serif;
+                      font-family: 'Playfair Display', serif;
                     "
                   >
                     "You have zero privacy anyway. Get over it."
@@ -349,13 +356,12 @@
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="image-placeholder-box">
-                <span class="placeholder-icon">🌐</span>
-                <p class="fw-bold">Digital Connectivity Illustration</p>
-                <p class="small">
-                  Visual concept of data flow and technology integration (Slide
-                  1-3).
-                </p>
+              <div class="image-placeholder-box" style="padding: 0; border: none; background: none;">
+                <img
+                  src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+                  alt="Global digital network and data flow"
+                  style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+                />
               </div>
             </div>
           </div>
@@ -386,11 +392,12 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="image-placeholder-box">
-              <span class="placeholder-icon">🏠</span>
-              <p class="small">
-                Visual: Personal space and digital disconnection (Slide 7).
-              </p>
+            <div class="image-placeholder-box" style="padding: 0; border: none; background: none;">
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
+                alt="Person in solitude enjoying personal space"
+                style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+              />
             </div>
           </div>
         </div>
@@ -409,11 +416,12 @@
             </div>
           </div>
           <div class="col-md-6 order-md-1">
-            <div class="image-placeholder-box">
-              <span class="placeholder-icon">🕶️</span>
-              <p class="small">
-                Visual: Masked identity or incognito concepts (Slide 9).
-              </p>
+            <div class="image-placeholder-box" style="padding: 0; border: none; background: none;">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*rBHJCcDdDZ-xUgenp_l8fw.jpeg"
+                alt="Anonymous person with mask representing digital anonymity"
+                style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+              />
             </div>
           </div>
         </div>
@@ -432,11 +440,12 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="image-placeholder-box">
-              <span class="placeholder-icon">❤️</span>
-              <p class="small">
-                Visual: Protection of deeply personal data points (Slide 11).
-              </p>
+            <div class="image-placeholder-box" style="padding: 0; border: none; background: none;">
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d"
+                alt="Personal data and intimate information protection"
+                style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+              />
             </div>
           </div>
         </div>
@@ -455,11 +464,12 @@
             </div>
           </div>
           <div class="col-md-6 order-md-1">
-            <div class="image-placeholder-box">
-              <span class="placeholder-icon">🔒</span>
-              <p class="small">
-                Visual: Managing personal data boundaries (Slide 13).
-              </p>
+            <div class="image-placeholder-box" style="padding: 0; border: none; background: none;">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3"
+                alt="Data control and personal information boundaries"
+                style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+              />
             </div>
           </div>
         </div>
@@ -547,7 +557,7 @@
             </div>
             <div class="col-lg-6">
               <div class="p-4 bg-dark text-white rounded shadow">
-                <h5 class="text-terracotta">Spheres of Privacy</h5>
+                <h5 class="text-warning">Spheres of Privacy</h5>
                 <div class="small mt-3">
                   <p>
                     <strong>Personal Privacy:</strong> Controlling personal
@@ -567,13 +577,12 @@
               </div>
             </div>
           </div>
-          <div class="image-placeholder-box mt-4">
-            <span class="placeholder-icon">🛡️</span>
-            <p class="fw-bold">Security & Privacy Convergence</p>
-            <p class="small">
-              Visualizing the intersection of individual rights and
-              organizational security (Slide 20-24).
-            </p>
+          <div class="image-placeholder-box mt-4" style="padding: 0; border: none; background: none; min-height: 300px;">
+            <img
+              src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7"
+              alt="Security and privacy convergence with digital protection"
+              style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+            />
           </div>
         </div>
       </section>
@@ -653,8 +662,12 @@
                 to ensure information confidentiality. Users are also encouraged
                 to practice self-regulation.
               </p>
-              <div class="image-placeholder-box mt-3" style="min-height: 150px">
-                <span class="small">Security Infrastructure Visual</span>
+              <div class="image-placeholder-box mt-3" style="min-height: 150px; padding: 0; border: none; background: none;">
+                <img
+                  src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+                  alt="Technical security infrastructure"
+                  style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+                />
               </div>
             </div>
           </div>
@@ -666,8 +679,12 @@
                 is shared and protect it from unauthorized reproduction or
                 distribution.
               </p>
-              <div class="image-placeholder-box mt-3" style="min-height: 150px">
-                <span class="small">Policy & Agreements Visual</span>
+              <div class="image-placeholder-box mt-3" style="min-height: 150px; padding: 0; border: none; background: none;">
+                <img
+                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85"
+                  alt="Policy and agreements documentation"
+                  style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+                />
               </div>
             </div>
           </div>
@@ -679,8 +696,12 @@
                 designed to protect the confidentiality and integrity of citizen
                 information.
               </p>
-              <div class="image-placeholder-box mt-3" style="min-height: 150px">
-                <span class="small">Law & Legislation Visual</span>
+              <div class="image-placeholder-box mt-3" style="min-height: 150px; padding: 0; border: none; background: none;">
+                <img
+                  src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f"
+                  alt="Law and legislation books"
+                  style="box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);"
+                />
               </div>
             </div>
           </div>
